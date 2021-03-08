@@ -1,0 +1,67 @@
+/* TEST */
+
+.box1{
+    height: 100px;
+    width: 100%;
+    background-color: dodgerblue;
+}
+
+.box2{
+    height: 100px;
+    width: 100%;
+    background-color: orange;
+}
+/* UTILITYES */
+
+.img-box{
+    max-width:150px;
+    height:auto;
+    vertical-align: middle;
+}
+
+.text-right{
+    vertical-align: middle;
+}
+
+.inline-list{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+}
+
+.inline-list a{
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+}
+
+.button{
+    min-width: 80px;
+    padding: 10px;
+    border-radius:5px;
+}
+
+nav .button{
+    border: 1px solid #3688ff;
+    color: #3688ff;
+}
+
+nav a:hover{
+    color:#00219d;
+    text-decoration: none;
+}
+
+
+
+/* NAVBAR */
+
+.nav-bar{
+    padding: 20px 0;
+    background:#ffffff;
+    /* font-size: 12px; */
+}
+
+.nav-bar .text-right i{
+    font-size:30px;
+    color: #4690ff;
+}

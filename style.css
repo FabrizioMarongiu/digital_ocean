@@ -12,6 +12,19 @@
     background-color: orange;
 }
 /* UTILITYES */
+/* COLORS */
+
+.hero h1{
+    color: white;
+}
+
+.hero h2{
+    color: black;
+}
+
+.hero h2 span{
+    color: #006aff;
+}
 
 .img-box{
     max-width:150px;
@@ -36,24 +49,54 @@
 }
 
 .button{
-    min-width: 80px;
-    padding: 10px;
+    min-width: 70px;
+    padding: 8px;
     border-radius:5px;
+    display: inline-block;
+    text-align: center;
+ }
+ 
+.big-button-blue{
+    min-width: 100%;
+    border: 1px solid transparent;
+    background-color: #579aff;
+    margin-top: 10px;
+    color: #fff;
 }
+
+.big-button-white{
+    min-width: 100%;
+    border: 1px solid transparent;
+    background-color:#fff;
+    margin-top: 10px;
+    color:#686868;
+    box-shadow: 4px 3px 8px -3px;
+    position:relative;
+}
+
+nav a:hover,
+section.jumbo a:hover{
+    color:#00219d;
+    text-decoration: none;
+}
+
+.terms p{
+    text-align:center;
+    color:black;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+
+/* NAVBAR */
+
 
 nav .button{
     border: 1px solid #3688ff;
     color: #3688ff;
 }
 
-nav a:hover{
-    color:#00219d;
-    text-decoration: none;
-}
 
-
-
-/* NAVBAR */
 
 .nav-bar{
     padding: 20px 0;
@@ -64,4 +107,65 @@ nav a:hover{
 .nav-bar .text-right i{
     font-size:30px;
     color: #4690ff;
+}
+
+/* HERO */
+
+
+.hero-text{
+    font-size:20px;
+    color:#bbcdff;
+}
+
+section.hero{
+    background-image: url(./img/bg-banner-home.jpg);
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height:auto;
+    padding:50px 0;
+}
+
+.form{
+    height:auto;
+    margin:auto;
+    padding:10px;
+    background:#fff;
+    border-radius: 5px;
+}
+
+.form [type="email"],
+.form [type="password"]{
+    height: 40px;
+    /* width: 100%; */
+}
+
+.hero-form{
+    width:100%;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    color: #7d7d7d;
+    font-weight: 500;
+}
+
+.img-box-google{
+    max-width:20px;
+    height:auto;
+    vertical-align: middle;
+    position:absolute;
+    left:20px;
+}
+
+/* JUMBOTRONE */
+
+.jumbo-text{
+    text-transform: uppercase;
+    color: #6f7b97;
+    text-align: center;
+    font-size: 10px;
+}
+
+.logo-box{
+    width: calc(100% / 2) -10px;
 }

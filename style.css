@@ -244,6 +244,8 @@ main .main-top p{
 
 .slide-text-box{
     margin: 50px 0;
+    display: inline-block;
+    width: 350px;
 }
 
 .slide-text-box h2{
@@ -251,13 +253,14 @@ main .main-top p{
 }
 
 .slide{
-    max-width:250px
+    max-width:250px;
+    margin: 0 15px;
+    
 }
 
 .slide-box p.text-blue{
     margin-top: 20px;
     font-weight: bold;
-    
 }
 
 .circles{
@@ -266,6 +269,14 @@ main .main-top p{
     font-size:8px;
     margin: 40px auto;
 }
+
+.angle{
+    display: inline-block;
+    font-size:30px;
+    top:50%;
+}
+
+
 
 
 
@@ -288,4 +299,23 @@ main .main-top p{
 section.jumbo img{
     max-width: 100px;
 }
+}
+
+/* Main slide */
+@media screen and (max-width:767px){
+    .angle{
+        display:none;
+    }
+}
+
+@media screen and (min-width:768px){
+    .slide{
+        max-width:350px;
+    }
+}
+
+@media screen and (min-width:970px){
+    .slide{
+        max-width:450px
+    }
 }

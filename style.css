@@ -14,22 +14,35 @@
 /* UTILITYES */
 /* COLORS */
 
+
+.text-gray{
+    color: #616f8c;
+}
 .hero h1{
     color: white;
 }
 
-.hero h2{
-    color: black;
+
+.hero h3 span{
+    color: #006aff;
 }
 
-.hero h2 span{
-    color: #006aff;
+/* -------------- */
+
+.long-text{
+    font-size:20px;
+    color:#bbcdff;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .img-box{
     max-width:150px;
     height:auto;
     vertical-align: middle;
+    text-align: center;
 }
 
 .text-right{
@@ -112,10 +125,7 @@ nav .button{
 /* HERO */
 
 
-.hero-text{
-    font-size:20px;
-    color:#bbcdff;
-}
+
 
 section.hero{
     background-image: url(./img/bg-banner-home.jpg);
@@ -128,7 +138,7 @@ section.hero{
 
 .form{
     height:auto;
-    margin:auto;
+    margin: 0 auto;
     padding:10px;
     background:#fff;
     border-radius: 5px;
@@ -159,6 +169,11 @@ section.hero{
 
 /* JUMBOTRONE */
 
+.jumbo{
+        background:#f3f5f9;
+        padding:10px 0;
+}
+
 .jumbo-text{
     text-transform: uppercase;
     color: #6f7b97;
@@ -166,6 +181,63 @@ section.hero{
     font-size: 10px;
 }
 
+
 .logo-box{
-    width: calc(100% / 2) -10px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo-box img{
+    /* display: inline-block; */
+    width: calc( 100% / 2 - 5px);
+    max-width: 300px;
+    height: auto;
+    padding: 5px;
+}
+
+
+main .main-top{
+    text-align: center;
+    padding: 10px;
+    margin: 40px;
+}
+
+main .main-top p{
+    color: #5c6a88;
+}
+
+/* SIDE */
+
+.side-box {
+    height: 50px;
+    font-size: 15px;
+    color:#848ea5;
+    border-left: 1px solid #d2d2d2;
+    padding-left: 10px;
+}
+
+.side-card{
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------- */
+/* MEDIA QUERY */
+
+/* jumbotrone */
+
+@media screen and (min-width:768px){
+    .logo-box img{
+        width: calc( 100% / 6 - 20px);
+        
+    }
 }

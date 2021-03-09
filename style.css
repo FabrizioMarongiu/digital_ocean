@@ -13,7 +13,9 @@
 }
 /* UTILITYES */
 /* COLORS */
-
+a{
+    text-decoration:none;
+}
 
 .text-grey{
     color: #616f8c;
@@ -21,6 +23,10 @@
 
 .text-blue {
     color: #031c4e;
+}
+
+.text-bold{
+    font-weight: bold;
 }
 
 .hero h1{
@@ -32,6 +38,9 @@
     color: #006aff; 
 }
 
+.bkg-gradient{
+    background: linear-gradient(#0040ba, #001f9a)
+}
 
 /* -------------- */
 
@@ -233,6 +242,7 @@ main .main-top p{
 
 .side-card{
     padding: 20px 0;
+    text-align: left;
 }
 
 /* MAIN SLIDE PART 1 */
@@ -255,7 +265,6 @@ main .main-top p{
 .slide{
     max-width:250px;
     margin: 0 15px;
-    
 }
 
 .slide-box p.text-blue{
@@ -276,6 +285,82 @@ main .main-top p{
     top:50%;
 }
 
+/* FEATURES */
+.features{
+    text-align:center;
+    padding: 20px;
+}
+
+.features a{
+    color: #217dff;
+    text-decoration: none;
+}
+
+
+/* TABLES */
+.tables{
+    color: #fff;
+    padding: 60px 0;
+}
+.tables a{
+    color:#00d0cf;
+    text-decoration: none;
+}
+
+.tables-row{
+    border-bottom: 1px solid white;
+}
+
+.padding-tab{
+    padding: 20px 0;
+}
+
+/* SLIDE2 */
+
+.main-slide2{
+    background:#f3f5f9;
+    text-align: center;
+}
+
+.box-slide2{
+    display: inline-block;
+    background: #fff;
+    width:280px;
+    height: 350px;
+    margin: 0 15px;
+    border:1px solid black;
+}
+
+.slide2{
+    max-width:90%;
+    margin: 20px 15px;
+}
+
+.main-slide2 .box-slide2 p{
+    padding:30px 0;
+}
+
+.main-slide2 .angle{
+    transform: translatey(-200%)
+}
+
+/* MAIN BOTTOM */
+.main-bottom{
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.main-bottom .button{
+    border: 1px solid white;
+    background-color:white;
+    margin: 20px 0;
+}
+
+.main-bottom a.button{
+    color: #056dff;
+    text-decoration: none;
+}
 
 
 
@@ -301,7 +386,7 @@ section.jumbo img{
 }
 }
 
-/* Main slide */
+/* Main slide1 */
 @media screen and (max-width:767px){
     .angle{
         display:none;
@@ -319,3 +404,22 @@ section.jumbo img{
         max-width:450px
     }
 }
+
+
+/* Main slide2 */
+
+
+@media screen and (min-width:768px){
+    .box-slide2{
+        width:400px; 
+    }
+}
+
+@media screen and (min-width:970px){
+    .box-slide2{
+        width:450px; 
+    }
+}
+
+
+

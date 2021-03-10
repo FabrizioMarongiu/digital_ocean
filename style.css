@@ -408,7 +408,7 @@ footer ul{
     bottom: 50px;
     left:20px;
 }
-div.shark-box{
+a.shark-box{
     width:70px;
     height:70px;border-radius: 5px;
     background: #006aff;
@@ -416,13 +416,14 @@ div.shark-box{
     position: relative;
 }
 
-div.shark-box img{
+a.shark-box img{
     width: 100%;
     height: auto;
     padding: 10%;
 }
 
 .message-box{
+    box-shadow:  4px 3px 8px -3px;
     display: none;
 }
 
@@ -455,7 +456,7 @@ div.shark-box img{
     height: 100px;
     background: #fff;
     border-radius: 5px;
-    box-shadow:  4px 3px 8px -3px;
+    
     position: relative;
     top: 25px;
     z-index: 2;

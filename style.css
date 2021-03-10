@@ -244,6 +244,10 @@ main .main-top p{
     text-decoration: none;
 }
 
+main .right-side{
+    width:100%;
+}
+
 
 .side-card{
     margin-bottom: 20px;
@@ -408,9 +412,10 @@ footer ul{
     bottom: 50px;
     left:20px;
 }
-a.shark-box{
+.shark-box{
     width:70px;
-    height:70px;border-radius: 5px;
+    height:70px;
+    border-radius: 5px;
     background: #006aff;
     display: inline-block;
     position: relative;
@@ -422,18 +427,21 @@ a.shark-box img{
     padding: 10%;
 }
 
-.message-box{
-    box-shadow:  4px 3px 8px -3px;
+ .message-box{
+    box-shadow:  5px 38px 16px -5px;
     display: none;
 }
 
- .helper:hover{
-    cursor: pointer;
+.message-box2{
+    box-shadow:  5px 38px 16px -5px;
+    display: none;
 }
+
+/*
 
 .helper:active .message-box{
     display: inline-block;
-}
+} */
 
 .red-number{
     width:25px;
@@ -456,7 +464,7 @@ a.shark-box img{
     height: 100px;
     background: #fff;
     border-radius: 5px;
-    
+    margin: 0 20px;
     position: relative;
     top: 25px;
     z-index: 2;
@@ -477,8 +485,8 @@ a.shark-box img{
     rotate: 45deg;
     border-radius: 5px;
     position: absolute;
-    left: 5%;
-    bottom: 20%;
+    left: 20%;
+    bottom: 12%;
     z-index: 1;
 }
 
@@ -537,22 +545,27 @@ section.jumbo img{
 
 /* HELPER */
 
+@media screen and (max-width:969px){
+    .helper:active .message-box2{
+        display: inline-block;
+    }
+}
+
 @media screen and (min-width:970px){
 
     .helper{
-        left:90%;
-    }
-
-    .message{
-        top:-50%;
-        bottom: 40px;
-        left:-120%
+        right: 20px;
+        left:auto;
     }
 
     .cube{
-        left: -33%;
-        bottom: 45%;
+        left: auto;
+        bottom: 12%;
+        right: 20%;
     }
+
+    .helper:active .message-box{
+        display: inline-block;
 }
 
 

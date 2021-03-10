@@ -368,7 +368,7 @@ main .main-top p{
 
 /* FOOTER */
 footer{
-    padding: 50px 0;
+    padding: 50px 0 250px;
     background:#031c4e;
     color: #fff;
 }
@@ -399,7 +399,62 @@ footer ul{
     padding-left: 0;;
 }
 
+/* HELP CHAT */
+.helper{
+    position:fixed;
+    bottom: 50px;
+    left:20px;
+}
+a.shark-box{
+    width:70px;
+    height:70px;border-radius: 5px;
+    background: #006aff;
+    display: inline-block;
+}
 
+a.shark-box img{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+}
+
+/* .message-box{
+    opacity: 1;
+}
+
+.helper:active .message-box{
+    opacity: 1;
+} */
+.message{
+    width: 300px;
+    height: 100px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow:  4px 3px 8px -3px;
+    position: relative;
+    top: 25px;
+    z-index: 2;
+    padding:5px 8px;
+    text-align: center;
+}
+
+a.button{
+    background-color: dodgerblue;
+    color:#fff;
+    padding: 3px;
+}
+
+.cube{
+    width:50px;
+    height:50px;
+    background:#fff;
+    rotate: 45deg;
+    border-radius: 5px;
+    position: absolute;
+    left: 5%;
+    bottom: 20%;
+    z-index: 1;
+}
 
 
 
@@ -451,6 +506,26 @@ section.jumbo img{
 @media screen and (min-width:970px){
     .box-slide2{
         width:450px; 
+    }
+}
+
+/* HELPER */
+
+@media screen and (min-width:970px){
+
+    .helper{
+        left:90%;
+    }
+
+    .message{
+        top:-50%;
+        bottom: 40px;
+        left:-120%
+    }
+
+    .cube{
+        left: -33%;
+        bottom: 45%;
     }
 }
 

@@ -1,19 +1,10 @@
-/* TEST */
-
-.box1{
-    height: 100px;
-    width: 100%;
-    background-color: dodgerblue;
-}
-
-.box2{
-    height: 100px;
-    width: 100%;
-    background-color: orange;
-}
 /* UTILITYES */
 /* COLORS */
-a{
+body{
+    padding-top: 87px;
+}
+
+a:hover{
     text-decoration:none;
 }
 
@@ -109,6 +100,12 @@ a{
     position:relative;
 }
 
+a.button:hover,
+a.big-button-blue:hover,
+a.big-button-white:hover{
+    text-decoration:none;
+}
+
 nav a:hover,
 section.jumbo a:hover{
     color:#00219d;
@@ -122,21 +119,21 @@ section.jumbo a:hover{
     font-size: 10px;
 }
 
-
 /* NAVBAR */
-
 
 nav .button{
     border: 1px solid #3688ff;
     color: #3688ff;
 }
 
-
-
 .nav-bar{
     padding: 20px 0;
     background:#ffffff;
-    /* font-size: 12px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 5;
 }
 
 .nav-bar .text-right i{
@@ -146,13 +143,9 @@ nav .button{
 
 /* HERO */
 
-
-
-
 section.hero{
     background-image: url(./img/bg-banner-home.jpg);
     background-size: contain;
-    /* background-repeat: no-repeat; */
     width: 100%;
     height:auto;
     padding:50px 0;
@@ -169,7 +162,6 @@ section.hero{
 .form [type="email"],
 .form [type="password"]{
     height: 40px;
-    /* width: 100%; */
 }
 
 .hero-form{
@@ -209,7 +201,6 @@ section.jumbo ul {
 
 section.jumbo li{
     width: calc( 100% / 2 - 5px);
-    
     height: auto;  
 }
 
@@ -240,8 +231,21 @@ main .main-top p{
     padding-left: 10px;
 }
 
+.side-box:last-child{
+    margin-bottom: 20px;
+}
+
+.side-box a{
+    color:#848ea5;
+}
+
+/* .side-box a:hover{
+    color: #00219d;
+} */
+
+
 .side-card{
-    padding: 20px 0;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -362,9 +366,38 @@ main .main-top p{
     text-decoration: none;
 }
 
+/* FOOTER */
+footer{
+    padding: 50px 0;
+    background:#031c4e;
+    color: #fff;
+}
 
+footer a{
+    color:#7a859d;
+}
 
+footer a:hover{
+    text-decoration: none;
+}
 
+footer .social a{
+    display: block;
+    margin-top: 7px;
+}
+
+footer a i{
+    font-size:25px;
+    color:#7a859d;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer ul{
+    padding-left: 0;;
+}
 
 
 

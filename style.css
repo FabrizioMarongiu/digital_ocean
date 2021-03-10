@@ -437,11 +437,11 @@ a.shark-box img{
     display: none;
 }
 
-/*
 
-.helper:active .message-box{
-    display: inline-block;
-} */
+
+.helper:hover{
+    cursor: pointer;
+}
 
 .red-number{
     width:25px;
